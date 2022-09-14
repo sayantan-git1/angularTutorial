@@ -1,0 +1,21 @@
+<h2>For loop in angular</h2>
+
+<div class="table-responsive">
+    <table class="table" border="1">
+        <thead>
+            <tr>
+                <th scope="col">Name </th>
+                <th scope="col">Age</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td> {{user.name}} </td>
+                <td> {{user.age}} </td>
+                <td> {{user.email}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
