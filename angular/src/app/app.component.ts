@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+  name = "Charlie";
+  disabledBox=true;
+
+  toggleBox()
+  {
+    this.disabledBox=!this.disabledBox;
+  }
 }
