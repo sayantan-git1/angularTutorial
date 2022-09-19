@@ -1,0 +1,26 @@
+{
+  "employees": [
+    {
+      "name": "Alpha",
+      "email": "a@gmail.com",
+      "salary": 39783,
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Alpha",
+      "email": "alpha@gmail.com",
+      "username": "alpha34",
+      "password": "alpha283#"
+    },
+    {
+      "name": "charlie",
+      "email": "charlie348@gmail.com",
+      "username": "charlie_tango632",
+      "password": "charlie*^#4883",
+      "id": 2
+    }
+  ]
+}
