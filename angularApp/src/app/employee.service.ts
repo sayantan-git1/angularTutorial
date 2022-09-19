@@ -21,14 +21,14 @@ export class EmployeeService {
   }
 
   getEmployee(id:Employee){
-    return this.http.get(`${this.url}/${id}`)
+    return this.http.get<Employee>(`${this.url}/${id}`)
   }
 
-  editEmployee(id:Number, employeeData: any){
+  editEmployee(id:number, employeeData: any){
     return this.http.put(`${this.url}/${id}`,employeeData)
   }
 
-  deleteEmployee(id:Number){
+  deleteEmployee(id:number){
     return this.http.delete(`${this.url}/${id}`)
   }
 
