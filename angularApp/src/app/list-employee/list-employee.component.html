@@ -1,0 +1,30 @@
+<h1>List employees</h1><br><br>
+<div class="table-responsive">
+    <table class="table table-striped table-hover table-borderless table-primary align-middle">
+        <thead class="table-light">
+
+            <tr>
+                <th> # </th>
+                <th> Name</th>
+                <th>Email</th>
+                <th> Salary</th>
+                <th> Edit </th>
+                <th> Delete </th>
+            </tr>
+            
+        </thead>
+        
+        <tbody class="table-group-divider">
+            <tr class="table-primary" *ngFor="let employee of employees">
+                
+                <td scope="row">{{employee.id}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.email}}</td>
+                <td>{{employee.salary}}</td>
+                <td><a routerLink="/update/employee/{{employee.id}}"><i class="fa fa-edit" aria-hidden="true"></i></a></td>
+                <td><a routerLink="/list"><i class="fa fa-trash fa-link" (click)= "deleteEmployee(employee.id)"></i></a></td>
+            </tr>
+        </tbody>
+    
+    </table>
+</div>
